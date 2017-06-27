@@ -1,3 +1,14 @@
 <div class="app">
-  {{title}}
+  <h1 [innerHTML]="title"></h1>
+  <div>
+
+    <button (click)="handleClick(username.value)">
+      Get Value
+    </button>
+
+    <input #username>
+
+    {{name}}
+
+  </div>
 </div>
